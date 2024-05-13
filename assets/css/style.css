@@ -1,6 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
@@ -9,11 +10,10 @@ h1, h2, h3 {
 
 header {
     background-color: #77825c;
-    position: fixed;
     display: flex;
-    padding: 0 0.5rem;
-    height: 200px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .hidden-heading {
@@ -27,13 +27,33 @@ header {
     background: url("../images/heroImage.webp") no-repeat center center/cover;
 }
 
+/* logo */
 #logo {
+    height 60px;
+    width: auto;
     float: center;
 }
 
-#logo img {
-    height 60px;
-    width: auto;
-    position: absolute;
-    margin-left: 300px;
+/* navigation */
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0ead8;
+    margin-left: 20px; 
+}
+
+/* Main content */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section > p {
+    margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
 }
