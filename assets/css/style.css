@@ -98,6 +98,7 @@ nav a {
 
 #video video {
     width: 50%;
+    margin-bottom: 65px;
 }
 
 /* footer background */
@@ -117,9 +118,9 @@ footer {
     padding: 20px 0;
 }
 
-/* overwrites general heading style for better readability */
+/* overwrites general header style for better readability on smaller screens */
 footer h2, div {
-    color: #a9b99f;
+    color: #f0ead8;
 }
 
 #social-media {
@@ -144,12 +145,17 @@ footer h2, div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 40px auto;
 }
 
 .room {
-    display: flex;
-    margin-bottom: 20px;
+    margin: 40px auto 20px;
+}
+
+.rooms h1 {
+    text-align: center;
 }
 
 .room-image {
@@ -159,12 +165,17 @@ footer h2, div {
 
 /* adjusts the size of the image */
 .room-image img {
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: auto;
 }
 
 .room-description {
+    color: #3a3a3a;
     flex: 3;
+}
+
+.table {
+    justify-content: center;
 }
 
 h2 {
