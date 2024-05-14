@@ -10,7 +10,9 @@ body {
     position: relative;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     color: #77825c;
@@ -19,9 +21,9 @@ h1, h2, h3 {
 header {
     background-color: #77825c;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 0;
 }
 
 .hidden-heading {
@@ -54,7 +56,7 @@ nav a {
     text-decoration: none;
     color: #f0ead8;
     margin-left: 20px;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 /* Main content */
@@ -66,7 +68,7 @@ nav a {
     margin: 40px
 }
 
-.intro > p {
+.intro>p {
     margin-bottom: 20px;
     white-space: pre-line;
 }
@@ -84,6 +86,7 @@ nav a {
 /* video */
 #video {
     margin-top: 20px;
+    margin-bottom: 65px;
     text-align: center;
 }
 
@@ -93,12 +96,47 @@ nav a {
 
 #video video {
     display: block;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
 #volume-btn {
     margin-top: 10px;
+}
+
+/* footer */
+footer {
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), /* gradient for opacity from top to bottom */
+        linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), /* gradient for opacity from left to right */
+        url("../images/background-footer.jpg") center center/cover;
+    font-size: larger;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+
+/* overwrites general heading style for better readability */
+footer h2, div {
+    color: #a9b99f;
+}
+
+#social-media {
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#social-media li {
+    margin: 0 5px;
+}
+
+#social-media>a {
+    color: #77825c;
+    text-decoration: none;
 }
 
 /* Rooms and Faclities Page */
