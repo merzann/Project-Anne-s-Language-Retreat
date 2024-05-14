@@ -76,3 +76,35 @@ nav a {
     padding-right: 20px;
     margin: 20px;
 }
+
+/* Rooms and Faclities Page */
+.room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.room {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.room-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* adjusts the size of the image */
+.room-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.room-description {
+    flex: 3;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
