@@ -1,16 +1,10 @@
-/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Genral styles */
+/* General Styles */
 body {
-    color: #3a3a3a;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -21,169 +15,312 @@ h3 {
     color: #77825c;
 }
 
-header {
-    background-color: #77825c;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0;
-}
-
 .hidden-heading {
     display: none;
 }
 
-/* Hero Image */
-#hero {
-    height: 700px;
-    width: 100%;
-    background: url("../images/heroImage.webp") no-repeat center center/cover;
+/* Header */
+header {
+    background-color: #77825c;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* logo */
-#logo {
-    height 60px;
-    width: auto;
-    margin: 0 auto;
+#menu {
+    display: none;
 }
 
-/* navigation */
+.active {
+    border-bottom: 1px solid #f0ead8;
+}
+
+/* styles for nav toggle */
+.nav-toggle-label {
+    display: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
 nav {
     display: flex;
-    align-items: flex-end;
-    margin-right: 50px;
-    font-size: 150%;
 }
 
 nav a {
+    color: #ffffff;;
     text-decoration: none;
-    color: #f0ead8;
-    margin-left: 20px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-/* Main content */
-.intro,
-.overview,
-#video {
+#logo img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Hero */
+#hero {
+    background-image: url(../images/heroImage.jpg);
+    background-size: cover;
+    height: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 0 10px;
-}
-
-.intro {
-    margin: 40px auto;
-}
-
-.intro > p {
-    margin-bottom: 15px;
-    white-space: pre-line;
-}
-
-.overview {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 20px auto;
-}
-
-/* video */
-#video {
-    margin; 20px auto 65px;
-}
-
-#video h2 {
-    margin-bottom: 30px;
-}
-
-#video video {
-    width: 100%;
-    margin-bottom: 65px;
-}
-
-/* footer background */
-footer {
-    background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), /* gradient for opacity from top to bottom */
-        linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), /* gradient for opacity from left to right */
-        url("../images/background-footer.jpg") center center/cover;
-}
-
-/* footer general styles */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    min-height: 15vh;
-    padding: 3px 0;
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
-}
-
-/* overwrites general header style for better readability on smaller screens */
-footer h2, div {
-    color: #f0ead8;
-}
-
-#social-media {
-    font-size: 120%;
-    display: flex;
     justify-content: center;
+}
+
+/* Intro Section */
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+}
+
+.intro h3 {
+    line-height: 1.5;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+/* Overview Section */
+.overview {
+    padding: 20px;
+    text-align: justify;
+}
+
+.overview p {
+    margin-bottom: 20px;
+}
+
+/* Video Section */
+#video {
+    padding: 20px;
+    text-align: center;
+}
+
+#video-player {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #77825c;
+    color: #f0ead8;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-#social-media li {
-    margin: 0 5px;
+footer ul li {
+    margin-right: 10px;
 }
 
 #social-media a {
-    color: #77825c;
     text-decoration: none;
+    color: #f0ead8;
 }
 
-/* Rooms and Faclities Page */
-.room-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Media Queries */
+
+/* Large or landscape phones (576px and up) */
+@media (min-width: 576px) {
+
+    /* Header */
+    /* Hide the checkbox label */
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* Show the menu */
+    #menu {
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    /* Remove margin from the last menu item */
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+/* Tablets and larger (768px and up) */
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 10px 40px;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    /* Hero */
+    #hero {
+        height: 400px;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 20px;
+        margin: 0 15px 0;
+        font-size: large;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0 20px 0;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 85%;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Header */
+    #logo {
+        order: -1;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 20px;
+        margin: 0 15px 0;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0 20px 0;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 75%;
+    }
+}
+
+/* Screens 1024px and up */
+@media screen and (min-width: 1024px) {
+
+    /* Hero */
+    #hero {
+        height: 500px;
+    }
+}
+
+/* Intro Section */
+.intro {
+    font-size: larger;
+    padding: 40px;
+}
+
+/* Overview Section */
+.overview {
+    font-size: 24px;
+    padding: 40px;
     text-align: center;
-    padding: 0 10px;
-    margin: 40px auto;
 }
 
-.room {
-    flex-direction: column;
-    margin: 40px auto 20px;
+.overview p {
+    margin-bottom: 40px;
 }
 
-.rooms h1 {
-    text-align: center;
-}
+/* Screens larger than 1200px */
+@media screen and (min-width: 1200px) {
 
-.room-image {
-    flex: 1;
-    margin: 0 auto 10px;
-}
+    /* Header */
+    header {
+        padding: 10px 80px;
+    }
 
-/* adjusts the size of the image */
-.room-image img {
-    height: 100%;
-    width: 100%;
-}
+    /* Hero */
+    #hero {
+        height: 90vh;
+        width: 80vw;
+        display: block;
+        margin: 40px auto 0;
+    }
 
-.room-description {
-    color: #3a3a3a;
-    margin: 0;
-    flex: 3;
-}
+    /* Intro Section */
+    .intro {
+        padding: 40px;
+    }
 
-.room-description table {
-    text-align: center;
-    margin: 0 auto;
-}
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 40px;
+        text-align: center;
+    }
 
-h2 {
-    margin-bottom: 10px;
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 50%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px;
+    }
 }
