@@ -263,23 +263,23 @@ footer ul li {
     #hero {
         height: 500px;
     }
-}
 
-/* Intro Section */
-.intro {
-    font-size: larger;
-    padding: 40px;
-}
+    /* Intro Section */
+    .intro {
+        font-size: larger;
+        padding: 40px;
+    }
 
-/* Overview Section */
-.overview {
-    font-size: 24px;
-    padding: 40px;
-    text-align: center;
-}
+    /* Overview Section */
+    .overview {
+        font-size: 24px;
+        padding: 40px;
+        text-align: center;
+    }
 
-.overview p {
-    margin-bottom: 40px;
+    .overview p {
+        margin-bottom: 40px;
+    }
 }
 
 /* Screens larger than 1200px */
