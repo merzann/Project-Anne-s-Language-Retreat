@@ -28,6 +28,12 @@ header {
     justify-content: space-between;
 }
 
+#logo img {
+    display: inline-block;
+    max-height: 150%;
+    max-width: 100%;
+}
+
 #menu {
     display: none;
 }
@@ -55,15 +61,9 @@ nav a {
     margin-right: 20px;
 }
 
-#logo img {
-    display: inline-block;
-    max-height: 100%;
-    max-width: 100%;
-}
-
 /* Hero */
 #hero {
-    background-image: url(../images/heroImage.jpg);
+    background-image: url(../images/heroImage.webp);
     background-size: cover;
     height: 300px;
     display: flex;
@@ -279,7 +279,7 @@ button[type="submit"]:hover {
 }
 
 .location-container p {
-    margin: 10px;
+    margin: 10px 8px 20px;
 }
 
 /* Media Queries */
@@ -288,7 +288,6 @@ button[type="submit"]:hover {
 @media (min-width: 576px) {
 
     /* Header */
-    /* Hide the checkbox label */
     .nav-toggle-label {
         display: none;
     }
@@ -331,6 +330,12 @@ button[type="submit"]:hover {
         color: #ffffff;
         text-decoration: none;
         margin-right: 10px;
+    }
+
+    #logo img {
+        display: inline-block;
+        max-height: 150%;
+        max-width: 100%;
     }
 
     /* Hero */
@@ -391,6 +396,10 @@ button[type="submit"]:hover {
         margin-top: 0;
     }
 
+    nav a {
+        white-space: nowrap;
+    }
+
     /* Intro Section */
     .intro {
         padding: 20px;
@@ -413,11 +422,21 @@ button[type="submit"]:hover {
     #video-player {
         width: 75%;
     }
+
+    footer h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 /* Screens 1024px and up */
 @media screen and (min-width: 1024px) {
 
+    /* Navigation section */
+    nav a {
+        white-space: nowrap;
+    }
+    
     /* Hero */
     #hero {
         height: 500px;
@@ -439,6 +458,12 @@ button[type="submit"]:hover {
     .overview p {
         margin-bottom: 40px;
     }
+    
+    footer h2 {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
 }
 
 /* Screens larger than 1200px */
@@ -446,7 +471,15 @@ button[type="submit"]:hover {
 
     /* Header */
     header {
+        width: 100%;
         padding: 10px;
+    }
+
+    nav a {
+        display: flex-end;
+        padding: 20px;
+        font-size: large;
+        margin-right: 10px;
     }
 
     /* Hero */
@@ -473,20 +506,35 @@ button[type="submit"]:hover {
         margin-bottom: 40px;
     }
 
-    /* Video Section */
-    #video-player {
-        width: 50%;
+    /* Makes sure video is centered after enabling flex */
+    div#video-player {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 65%;
+        bottom: 25px;
+        left: 55px;
+    }
+
+    #video h2 {
+        text-align: center;
     }
 
     /* Footer */
     footer {
-        padding: 40px;
+        padding: 0 0 20px;
         width: 100%;
     }
 
-    /* Room Container Adjustments */
+    footer h2 {
+        padding: 20px;
+    }
+
+    /* Room Container */
+
+    /* enabling flex to position the text next to the image */
     .room-container {
-        display: flex;
+        display: flex; 
         flex-direction: column;
         align-items: center;
     }
@@ -516,8 +564,39 @@ button[type="submit"]:hover {
         margin-left: 1em;
     }
 
+    .room-description h2 {
+        text-align: left;
+    }
+
     .room-description table {
         text-align: left;
         margin-top: 1em;
+        margin-left: 2px;
+    }
+
+    /* Enquiry form */
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    .form-container {
+        flex: 1 1 120%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .contact-container {
+        flex: 1 1 50%;
+        padding: 10px;
+        margin-top: 12px;
+        box-sizing: border-box;
+    }
+
+    .location-container {
+        flex: 1 1 50%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 }
