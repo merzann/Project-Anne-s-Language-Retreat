@@ -1,36 +1,506 @@
- /* Room Container Adjustments */
- .room-container {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: #77825c;
+}
+
+.hidden-heading {
+    display: none;
+}
+
+/* Header */
+header {
+    background-color: #77825c;
+    color: white;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: none;
+}
+
+.active {
+    border-bottom: 1px solid #f0ead8;
+}
+
+/* styles for nav toggle */
+.nav-toggle-label {
+    display: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#logo img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Hero */
+#hero {
+    background-image: url(../images/heroImage.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Intro Section */
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+}
+
+.intro h3 {
+    line-height: 1.5;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+/* Overview Section */
+.overview {
+    padding: 20px;
+    text-align: justify;
+}
+
+.overview p {
+    margin-bottom: 20px;
+}
+
+/* Video Section */
+#video {
+    padding: 20px;
+    text-align: center;
+}
+
+#video-player {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #77825c;
+    color: #f0ead8;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #f0ead8;
+}
+
+/* Room Container */
+.room-container {
+    text-align: center;
 }
 
 .room {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 20px 0;
-    width: 80%;
+    margin-bottom: 20px;
 }
 
-.room-image {
-    flex: 1;
-    margin-right: 1em;
+.room h1, .room h2 {
+    text-align: center;
 }
 
 .room-image img {
     width: 100%;
+    max-width: 500px;
     height: auto;
+    margin: 0 auto;
 }
 
 .room-description {
-    flex: 2;
-    text-align: left;
-    margin-left: 1em;
+    text-align: center;
+    margin: 20px 1em;
 }
 
 .room-description table {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Enquiry form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #77825c;
+    color: #f9fafc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Add space between the paper-plane icon and text */
+button[type="submit"] i {
+    margin-right: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: darkolivegreen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.small {
+    font-size: small;
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     text-align: left;
-    margin-top: 1em;
+}
+
+.contact-info h2 {
+    padding: 10px 10px;
+}
+.contact-info p {
+    margin: 10px;
+}
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+.contact-info span, .contact-info a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.location h2 {
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.location-container p {
+    margin: 10px;
+}
+
+/* Media Queries */
+
+/* Large or landscape phones (576px and up) */
+@media (min-width: 576px) {
+
+    /* Header */
+    /* Hide the checkbox label */
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* Show the menu */
+    #menu {
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    /* Remove margin from the last menu item */
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+/* Tablets and larger (768px and up) */
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 10px 40px;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    /* Hero */
+    #hero {
+        height: 400px;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 20px;
+        margin: 0 15px 0;
+        font-size: large;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0 20px 0;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 85%;
+    }
+
+    /* Room Container */
+    .room-container h1 {
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .room-description {
+        text-align: center;
+        margin: 1em 2em;
+    }
+
+    .room-description table {
+        text-align: center;
+        margin: 1em auto 3em;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Header */
+    #logo {
+        order: -1;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 20px;
+        margin: 0 15px 0;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0 20px 0;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 75%;
+    }
+}
+
+/* Screens 1024px and up */
+@media screen and (min-width: 1024px) {
+
+    /* Hero */
+    #hero {
+        height: 500px;
+    }
+
+    /* Intro Section */
+    .intro {
+        font-size: larger;
+        padding: 40px;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 24px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+}
+
+/* Screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    /* Hero */
+    #hero {
+        height: 90vh;
+        width: 80vw;
+        display: block;
+        margin: 40px auto 0;
+    }
+
+    /* Intro Section */
+    .intro {
+        padding: 40px;
+    }
+
+    /* Overview Section */
+    .overview {
+        font-size: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .overview p {
+        margin-bottom: 40px;
+    }
+
+    /* Video Section */
+    #video-player {
+        width: 50%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px;
+        width: 100%;
+    }
+
+    /* Room Container Adjustments */
+    .room-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .room-image {
+        flex: 1;
+        margin-right: 1em;
+    }
+
+    .room-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .room-description {
+        flex: 2;
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .room-description table {
+        text-align: left;
+        margin-top: 1em;
+    }
 }

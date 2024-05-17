@@ -43,7 +43,7 @@
             </nav>
         </div>
     </header>
-    <Section>
+    <Section class="form-container">
         <h1>CONTACT US</h1>
         <div>
             <!-- enquiry form -->
@@ -67,44 +67,69 @@
                         <input id="phone-field" value name="phone-field" placeholder="Enter Phone Number" type="text"
                             required />
                     </div>
-                    <div>
+                    <div class="radio-group">
                         <label for="lang-pkg" aria-label="click when interested in a language course">Are you interested
                             in booking a language course?</label>
-                        <input id="lang-pkg" name="lang-pkg" placeholder="start typing..." list="courses" required />
-                        <datalist id="courses">
-                            <option value="General English"></option>
-                            <option value="Professional English"></option>
-                            <option value="Academic Language English"></option>
-                            <option value="Exam Preparation"></option>
-                            <option value="General German"></option>
-                            <option value="Professional German"></option>
-                            <option value="Academic Language German"></option>
-                        </datalist>
-                    </div>
-                    <div>
-                        <label for="message-field"
-                            aria-label="Enter your message, this is a required field">Message*</label>
-                        <br>
-                        <textarea name="message-field" id="message-field" placeholder="Write your messaage..." rows="10"
-                            cols="40" required></textarea>
-                    </div>
-                    <button type="submit" value name="postdata" aria-label="Click button to submit inquiry">
-                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
-                        <span>SEND EMAIL</span>
-                    </button>
+                        <div>
+                            <input id="lang-pkg-general" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-general" aria-label="General English">General English</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-professional" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-professional"
+                                aria-label="Professional and Business English">Professional
+                                and Business English</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-academic" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-academic" aria-label="English Academic Language">English Academic
+                                Language</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-exam" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-exam" aria-label="Exam Preparation for English">Exam Preparation for
+                                English</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-general-german" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-general-german" aria-label="General German">General German</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-professional-german" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-professional-german"
+                                aria-label="Professional and Business German">Professional and Business German</label>
+                        </div>
+                        <div>
+                            <input id="lang-pkg-academic-german" name="lang-pkg-radio" type="radio" />
+                            <label for="lang-pkg-academic-german" aria-label="Academic Language German">Academic
+                                Language
+                                German</label>
+                        </div>
+                        <div>
+                            <label for="message-field"
+                                aria-label="Enter your message, this is a required field">Message*</label>
+                            <br>
+                            <textarea name="message-field" id="message-field" placeholder="Write your messaage..."
+                                rows="10" cols="40" required></textarea>
+                        </div>
+                        <button type="submit" value name="postdata" aria-label="Click button to submit inquiry">
+                            <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                            <span>SEND EMAIL</span>
+                        </button>
                 </fieldset>
-                <span>* indicates required field</span>
+                <span class="small">* indicates required field</span>
             </form>
         </div>
     </Section>
     <!-- Contact information -->
-    <section>
-        <h2>Contact Info</h2>
-        <div>
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Info</h2>
             <p>
                 <i class="fa-sharp fa-solid fa-hotel"></i>
                 Anne's Language Retreat
-                <br>
+            </p>
+            <p style="margin: 0 2.5rem;">
                 Benjamin Close
                 <br>
                 Ballybrack
@@ -126,19 +151,27 @@
                     4720</a>
             </p>
         </div>
-        <!-- location and directions -->
-        <div>
-            <iframe width="100%" height="400" frameborder="0" style="border:0" allowfullscreen
-                src="https://www.google.com/maps/place/Spunkane,+An+Coire%C3%A1n,+Co.+Kerry/@51.829464,-10.1848648,15z/data=!3m1!4b1!4m6!3m5!1s0x484f8e9dce05bfb3:0xa00c7a99731cb80!8m2!3d51.829465!4d-10.1745436!16zL20vMDQwNDd2?entry=ttu"></iframe>
-            <p>
-                From Dublin please progress on the N7, then M7 to Limerick. Exit the M7 at the junction to N21. Follow
-                the N21 to Killorglin than turn right onto the Ring of Kerry N70, then follow the N70 to Waterville
-                <br>
-                Alternatively you take the plane from Dublin Airport to Kerry Airport, the take a taxi to Waterville (approx. 110€) or rent a car at the airport.
-                <br>
-                From Cork please progress on the N22 until Killarney. At Cleeney Roundabout take the third exit onto the
-                N72. Follow the N72 and to Killorglin. Turn left at the first roundabout onto the N70, then follow the
-                N70 to waterville.
+    </section>
+    <!-- location and directions -->
+    <section class="location-container">
+        <div class="location">
+        <h2>Location</h2>
+        <p>
+            From Dublin please progress on the N7, then M7 to Limerick. Exit the M7 at the junction to N21. Follow
+            the N21 to Killorglin than turn right onto the Ring of Kerry N70, then follow the N70 to Waterville
+        </p>
+        <p>
+            Alternatively you take the plane from Dublin Airport to Kerry Airport, the take a taxi to Waterville
+            (approx. 110€) or rent a car at the airport.
+        </p>
+        <p>
+            From Cork please progress on the N22 until Killarney. At Cleeney Roundabout take the third exit onto the
+            N72. Follow the N72 and to Killorglin. Turn left at the first roundabout onto the N70, then follow the
+            N70 to waterville.
+        </p>
+        <iframe width="100%" height="400" frameborder="0" style="border:0" allowfullscreen
+            src="https://www.google.com/maps/place/Spunkane,+An+Coire%C3%A1n,+Co.+Kerry/@51.829464,-10.1848648,15z/data=!3m1!4b1!4m6!3m5!1s0x484f8e9dce05bfb3:0xa00c7a99731cb80!8m2!3d51.829465!4d-10.1745436!16zL20vMDQwNDd2?entry=ttu"></iframe>
+        </div>
         </div>
     </section>
     <footer>
@@ -178,10 +211,6 @@
                 </li>
             </ul>
         </section>
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/6ad4166ad8.js" crossorigin="anonymous"></script>
     </footer>
-
-    <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/6ad4166ad8.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
