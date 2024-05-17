@@ -316,6 +316,12 @@ button[type="submit"]:hover {
         color: #ffffff;
         text-decoration: none;
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 /* Tablets and larger (768px and up) */
@@ -506,18 +512,9 @@ button[type="submit"]:hover {
         margin-bottom: 40px;
     }
 
-    /* Makes sure video is centered after enabling flex */
-    div#video-player {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        width: 65%;
-        bottom: 25px;
-        left: 55px;
-    }
-
-    #video h2 {
-        text-align: center;
+    /* Video Section */
+    #video-player {
+        width: 50%;
     }
 
     /* Footer */
@@ -531,8 +528,6 @@ button[type="submit"]:hover {
     }
 
     /* Room Container */
-
-    /* enabling flex to position the text next to the image */
     .room-container {
         display: flex; 
         flex-direction: column;
