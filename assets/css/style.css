@@ -3,6 +3,7 @@
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f0ead8;
     margin: 0;
     padding: 0;
 }
@@ -184,6 +185,22 @@ form {
 fieldset {
     border: none;
     padding: 0;
+}
+
+.text-input {
+    margin: 5px 0 20px 0;
+}
+
+.text-area {
+    width: 100%;
+} 
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"] {
+    width:100%;
 }
 
 button[type="submit"] {
