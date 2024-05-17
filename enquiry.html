@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metatags for search engines -->
+    <meta name="description" content="Anne's Language Retreat, situated in a rural setting close to Waterville, 
+    our Bed and Breakfast is the ideal place to stay for exploring the Ring of Kerry in both directions and for language holidays, 
+    with a variety of courses to choose from for all levels.">
+    <meta name="keywords" content="Anne's language retreat, ireland, Kerry, Waterville, b&b, bed and breakfast, language holidays, language courses
+    hotel, tours, Skellig Michael, hiking, Gap of Dunloe, boat tours">
+    <!-- Title -->
+    <title>Inquiry</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="index.html">
+            <div id="logo">
+                <img src="assets/images/logoWhite.png" alt="Logo">
+            </div>
+        </a>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Go to the top of the page">Home</a></li>
+                    <li><a href="rooms.html" aria-label="Go to room and facilities list">Rooms</a></li>
+                    <li><a href="partner.html" aria-label="Go to partner information">Our Partners</a></li>
+                    <li><a href="enquiry.html" class="active" aria-label="Go to enquiry form">Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <Section>
+        <h1>CONTACT US</h1>
+        <div>
+            <!-- enquiry form -->
+            <form method="POST" action="https://formdump.codeinstitute.net">
+                <fieldset aria-label="fill in the form for general inquiry">
+                    <h2>General Inquiry</h2>
+                    <p>Please fill out the form below and we will get back to shortly</p>
+                    <div>
+                        <label for="name-field" aria-label="Enter your name, this is a required field">Name*</label>
+                        <input id="name-field" value name="name-field" placeholder="Enter Name" type="text" required />
+                    </div>
+                    <div>
+                        <label for="email-field"
+                            aria-label="Enter your email address, this is a required field">Email*</label>
+                        <input id="email-field" value name="email-field" placeholder="Enter Email" type="email"
+                            required />
+                    </div>
+                    <div>
+                        <label for="phone-field"
+                            aria-label="Enter your phone number, this is a required field">Phone*</label>
+                        <input id="phone-field" value name="phone-field" placeholder="Enter Phone Number" type="text"
+                            required />
+                    </div>
+                    <div>
+                        <label for="lang-pkg" aria-label="click when interested in a language course">Are you interested
+                            in booking a language course?</label>
+                        <input id="lang-pkg" name="lang-pkg" placeholder="start typing..." list="courses" required />
+                        <datalist id="courses">
+                            <option value="General English"></option>
+                            <option value="Professional English"></option>
+                            <option value="Academic Language English"></option>
+                            <option value="Exam Preparation"></option>
+                            <option value="General German"></option>
+                            <option value="Professional German"></option>
+                            <option value="Academic Language German"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="message-field"
+                            aria-label="Enter your message, this is a required field">Message*</label>
+                        <br>
+                        <textarea name="message-field" id="message-field" placeholder="Write your messaage..." rows="10"
+                            cols="40" required></textarea>
+                    </div>
+                    <button type="submit" value name="postdata" aria-label="Click button to submit inquiry">
+                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span>SEND EMAIL</span>
+                    </button>
+                </fieldset>
+                <span>* indicates required field</span>
+            </form>
+        </div>
+    </Section>
+    <!-- Contact information -->
+    <section>
+        <h2>Contact Info</h2>
+        <div>
+            <p>
+                <i class="fa-sharp fa-solid fa-hotel"></i>
+                Anne's Language Retreat
+                <br>
+                Benjamin Close
+                <br>
+                Ballybrack
+                <br>
+                Waterville
+                <br>
+                Co. Kerry
+                <br>
+                V23 P028
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email:</span>
+                <a href="mailto:info@anneslanguageretreat.com">info@anneslanguageretreat.com</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <span>Call:</span><a href="tel:+353 89 404 4720" value="+353894044720" target="_blank">+353 89 404
+                    4720</a>
+            </p>
+        </div>
+        <!-- location and directions -->
+        <div>
+            <iframe width="100%" height="400" frameborder="0" style="border:0" allowfullscreen
+                src="https://www.google.com/maps/place/Spunkane,+An+Coire%C3%A1n,+Co.+Kerry/@51.829464,-10.1848648,15z/data=!3m1!4b1!4m6!3m5!1s0x484f8e9dce05bfb3:0xa00c7a99731cb80!8m2!3d51.829465!4d-10.1745436!16zL20vMDQwNDd2?entry=ttu"></iframe>
+            <p>
+                From Dublin please progress on the N7, then M7 to Limerick. Exit the M7 at the junction to N21. Follow
+                the N21 to Killorglin than turn right onto the Ring of Kerry N70, then follow the N70 to Waterville
+                <br>
+                Alternatively you take the plane from Dublin Airport to Kerry Airport, the take a taxi to Waterville (approx. 110€) or rent a car at the airport.
+                <br>
+                From Cork please progress on the N22 until Killarney. At Cleeney Roundabout take the third exit onto the
+                N72. Follow the N72 and to Killorglin. Turn left at the first roundabout onto the N70, then follow the
+                N70 to waterville.
+        </div>
+    </section>
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div>
+                <p>Anne's Language Retreat, Ballybrack, Waterville, County Kerry, Ireland</p>
+                <div>
+                    <span>Phone: </span>
+                    <span>+353 89 4044720</span>
+                </div>
+                <div>
+                    <span>Email: </span>
+                    <span>info@anneslanguageretreat.com</span>
+                </div>
+                <div>
+                    <span>Your host: Annika Merz</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <ul id="social-media">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (link opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our YouTube page (link opens in a new tab)"><i
+                            class="fa-brands fa-square-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (link opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/6ad4166ad8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
