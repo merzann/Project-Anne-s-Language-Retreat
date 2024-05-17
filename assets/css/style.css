@@ -1,326 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* General Styles */
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    color: #77825c;
-}
-
-.hidden-heading {
-    display: none;
-}
-
-/* Header */
-header {
-    background-color: #77825c;
-    color: white;
-    padding: 10px 20px;
+ /* Room Container Adjustments */
+ .room-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.room {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
+    margin: 20px 0;
+    width: 80%;
 }
 
-#menu {
-    display: none;
+.room-image {
+    flex: 1;
+    margin-right: 1em;
 }
 
-.active {
-    border-bottom: 1px solid #f0ead8;
-}
-
-/* styles for nav toggle */
-.nav-toggle-label {
-    display: none;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-nav {
-    display: flex;
-}
-
-nav a {
-    color: #ffffff;;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-#logo img {
-    display: inline-block;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-/* Hero */
-#hero {
-    background-image: url(../images/heroImage.jpg);
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Intro Section */
-.intro {
-    padding: 20px;
-    text-align: center;
-}
-
-.intro h1 {
-    margin-bottom: 20px;
-}
-
-.intro h3 {
-    line-height: 1.5;
-}
-
-.intro p {
-    margin-bottom: 20px;
-}
-
-/* Overview Section */
-.overview {
-    padding: 20px;
-    text-align: justify;
-}
-
-.overview p {
-    margin-bottom: 20px;
-}
-
-/* Video Section */
-#video {
-    padding: 20px;
-    text-align: center;
-}
-
-#video-player {
+.room-image img {
     width: 100%;
+    height: auto;
 }
 
-/* Footer */
-footer {
-    background-color: #77825c;
-    color: #f0ead8;
-    padding: 20px;
-    margin-top: 40px;
-    text-align: center;
+.room-description {
+    flex: 2;
+    text-align: left;
+    margin-left: 1em;
 }
 
-footer section {
-    margin-bottom: 20px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin-right: 10px;
-}
-
-#social-media a {
-    text-decoration: none;
-    color: #f0ead8;
-}
-
-/* Media Queries */
-
-/* Large or landscape phones (576px and up) */
-@media (min-width: 576px) {
-
-    /* Header */
-    /* Hide the checkbox label */
-    .nav-toggle-label {
-        display: none;
-    }
-
-    /* Show the menu */
-    #menu {
-        display: block;
-    }
-
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-    }
-
-    nav ul li {
-        margin-right: 20px;
-    }
-
-    /* Remove margin from the last menu item */
-    nav ul li:last-child {
-        margin-right: 0;
-    }
-
-    nav a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-}
-
-/* Tablets and larger (768px and up) */
-@media (min-width: 768px) {
-
-    /* Header */
-    header {
-        padding: 10px 40px;
-    }
-
-    nav a {
-        color: #ffffff;
-        text-decoration: none;
-        margin-right: 10px;
-    }
-
-    /* Hero */
-    #hero {
-        height: 400px;
-    }
-
-    /* Intro Section */
-    .intro {
-        padding: 20px;
-        margin: 0 15px 0;
-        font-size: large;
-    }
-
-    /* Overview Section */
-    .overview {
-        font-size: 20px;
-        padding: 20px;
-        margin: 0 20px 0;
-        text-align: center;
-    }
-
-    .overview p {
-        margin-bottom: 40px;
-    }
-
-    /* Video Section */
-    #video-player {
-        width: 85%;
-    }
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media (min-width: 992px) {
-
-    /* Header */
-    #logo {
-        order: -1;
-    }
-
-    nav {
-        margin-top: 0;
-    }
-
-    /* Intro Section */
-    .intro {
-        padding: 20px;
-        margin: 0 15px 0;
-    }
-
-    /* Overview Section */
-    .overview {
-        font-size: 20px;
-        padding: 20px;
-        margin: 0 20px 0;
-        text-align: center;
-    }
-
-    .overview p {
-        margin-bottom: 40px;
-    }
-
-    /* Video Section */
-    #video-player {
-        width: 75%;
-    }
-}
-
-/* Screens 1024px and up */
-@media screen and (min-width: 1024px) {
-
-    /* Hero */
-    #hero {
-        height: 500px;
-    }
-
-    /* Intro Section */
-    .intro {
-        font-size: larger;
-        padding: 40px;
-    }
-
-    /* Overview Section */
-    .overview {
-        font-size: 24px;
-        padding: 40px;
-        text-align: center;
-    }
-
-    .overview p {
-        margin-bottom: 40px;
-    }
-}
-
-/* Screens larger than 1200px */
-@media screen and (min-width: 1200px) {
-
-    /* Header */
-    header {
-        padding: 10px 80px;
-    }
-
-    /* Hero */
-    #hero {
-        height: 90vh;
-        width: 80vw;
-        display: block;
-        margin: 40px auto 0;
-    }
-
-    /* Intro Section */
-    .intro {
-        padding: 40px;
-    }
-
-    /* Overview Section */
-    .overview {
-        font-size: 20px;
-        padding: 40px;
-        text-align: center;
-    }
-
-    .overview p {
-        margin-bottom: 40px;
-    }
-
-    /* Video Section */
-    #video-player {
-        width: 50%;
-    }
-
-    /* Footer */
-    footer {
-        padding: 40px;
-    }
+.room-description table {
+    text-align: left;
+    margin-top: 1em;
 }
