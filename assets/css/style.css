@@ -90,7 +90,7 @@ nav a {
     background-image: url(../images/hero.webp);
     background-size: cover;
     box-shadow: 0 2px 2px #f0ead8;
-    min-height: 400px;
+    min-height: 268px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,8 +212,9 @@ footer ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-top: 130px;
+    padding: 80px 0 50px;
+    margin-top: 100px;
+    margin-right: 10px;
 }
 
 .partner-container~ul {
@@ -237,6 +238,7 @@ footer ul li {
 
 .partner-info h2 {
     margin-top: 40px !important;
+    margin-right: 5px;
 }
 
 .img-partner {
@@ -384,8 +386,14 @@ button[type="submit"]:hover {
     margin: 10px 8px 20px;
 }
 
-
 /* Media Queries */
+
+/* Larger Mobile phones and landscape phones (576px and up) */
+@media (min-width: 576px) {
+#hero {
+    min-height: 380px;
+}
+}
 
 /* Tablets and larger (768px and up) */
 @media (min-width: 768px) {
@@ -597,6 +605,11 @@ button[type="submit"]:hover {
         padding: 10px;
     }
 
+    /* Hero Image */
+    #hero {
+        min-height: 650px;
+    }
+
     nav a {
         display: flex-end;
         padding: 20px;
@@ -663,6 +676,15 @@ button[type="submit"]:hover {
     #hero {
         min-height: 750px;
     }
+
+    /* Partner Container */
+.partner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 0 50px;
+    margin-top: 130px;
+}
 
     /* Enquiry Container */
     .form-container h1 {
