@@ -216,11 +216,6 @@ footer ul li {
     margin-top: 130px;
 }
 
-.partner-container~ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
 .partnercontainer h1 {
     padding-top: 6.5em;
     padding-bottom: 10px;
@@ -401,6 +396,7 @@ button[type="submit"]:hover {
         background-color: #77825c;
         box-shadow: none;
         display: block;
+        justify-content: baseline;
         width: fit-content;
         position: relative;
     }
@@ -425,18 +421,8 @@ button[type="submit"]:hover {
         padding-right: 1rem;
     }
 
-    #logo img {
-        height: 150%;
-    }
-
     .nav-toggle-label {
         display: none;
-    }
-
-    #logo img {
-        display: inline-block;
-        height: 150%;
-        width: 100%;
     }
 
     /* Hero */
@@ -633,7 +619,7 @@ button[type="submit"]:hover {
         align-items: flex-start;
         justify-content: space-between;
         margin: 20px 0;
-        width: 95%;
+        width: 100%;
     }
 
     .img-partner {
@@ -646,6 +632,11 @@ button[type="submit"]:hover {
         height: auto;
     }
 
+    #patty {
+        max-height: 50%;
+        max-width: 50%;
+    }
+
     .partner-info p {
         flex: 2;
         text-align: left;
@@ -655,6 +646,7 @@ button[type="submit"]:hover {
     .partner-info h2 {
         flex: 2;
         text-align: left;
+        margin-left: 20px !important;
     }
 
     /* Partner Profile Picture */
