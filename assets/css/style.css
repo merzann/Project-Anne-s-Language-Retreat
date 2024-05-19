@@ -216,6 +216,10 @@ footer ul li {
     margin-top: 130px;
 }
 
+.partner-container~ul {
+    list-style-type: none;
+}
+
 .partnercontainer h1 {
     padding-top: 6.5em;
     padding-bottom: 10px;
@@ -245,7 +249,7 @@ footer ul li {
 
 .partner-info p {
     text-align: center;
-    margin: 20px 2em 20px 0;
+    margin: 20px 1em;
 }
 
 /* Partner Profile Picture */
@@ -255,7 +259,6 @@ footer ul li {
     max-height: 35%;
     padding: 10px 0;
 }
-
 
 /* Enquiry form */
 .form-container {
@@ -553,7 +556,7 @@ button[type="submit"]:hover {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        margin: 20px 0;
+        margin: 20px;
         width: 80%;
     }
 
@@ -619,7 +622,7 @@ button[type="submit"]:hover {
         align-items: flex-start;
         justify-content: space-between;
         margin: 20px 0;
-        width: 100%;
+        width: 95%;
     }
 
     .img-partner {
@@ -632,11 +635,6 @@ button[type="submit"]:hover {
         height: auto;
     }
 
-    #patty {
-        max-height: 50%;
-        max-width: 50%;
-    }
-
     .partner-info p {
         flex: 2;
         text-align: left;
@@ -646,7 +644,7 @@ button[type="submit"]:hover {
     .partner-info h2 {
         flex: 2;
         text-align: left;
-        margin-left: 20px !important;
+        margin-left: 1em;
     }
 
     /* Partner Profile Picture */
