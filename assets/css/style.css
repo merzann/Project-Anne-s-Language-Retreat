@@ -24,13 +24,14 @@ h3 {
 header {
     background-color: #77825c;
     color: #f0ead8;
-    padding: 10px 20px;
+    padding: 0 20px;
     position: fixed;
     z-index: 99;
     box-shadow: 0 2px 2px #f0ead8;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
 }
 
 #logo img {
@@ -43,6 +44,7 @@ header {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    text-decoration: none;
 }
 
 #menu > li {
@@ -55,13 +57,19 @@ header {
 
 /* navigation section */
 nav {
+    background-color: #a9b99f;
+    box-shadow: 0 2px 2px #3a3a3a;
     position: absolute;
-    width: 100%;
+    width: 35%;
     left: 0;
     padding: 0 1rem;
     display: none;
-    background-color: #f0ead8;
     top: 100%;
+}
+
+nav a {
+    color: #f9fafc;
+    text-decoration: none;
 }
 
 /* styles for dropdown toggle */
@@ -82,10 +90,11 @@ nav {
     background-image: url(../images/hero.webp);
     background-size: cover;
     box-shadow: 0 2px 2px #f0ead8;
-    min-height: 350px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 /* Intro Section */
@@ -158,6 +167,15 @@ footer ul li {
 
 /* Room Container */
 .room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.room-container h1 {
+    padding-top: 6.5em;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -171,11 +189,13 @@ footer ul li {
 }
 
 .room-image img {
+    display: block;
     width: 100%;
     max-width: 500px;
     height: auto;
     margin: 0 auto;
 }
+
 
 .room-description {
     text-align: center;
@@ -187,12 +207,62 @@ footer ul li {
     margin: 20px auto;
 }
 
+/* Partner */
+.partner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+}
+
+h1.partner-container {
+    padding-top: 25%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li div h2 {
+    margin-top: 3em !important;
+}
+
+ul li div img{
+    margin-bottom: 1em !important;
+}
+
+.partner-info {
+    text-align: block;
+    padding-right: 20px;
+}
+
+.partner-info h2 {
+    margin-block-start: 20px;
+    padding: 20px;
+}
+
+/* Partner Profile Picture */
+.img-partner {
+    border-radius: 25%;
+    max-width: 35%;
+    max-height: 35%;
+    padding: 10px 0;
+}
+
 /* Enquiry form */
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+.form-container h1 {
+    padding-top: 6.5em;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 form {
@@ -251,8 +321,6 @@ button[type="submit"]:hover {
 }
 
 .contact-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
@@ -307,55 +375,8 @@ button[type="submit"]:hover {
     margin: 10px 8px 20px;
 }
 
-/* Partner */
-.partner-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto 20px;
-}
-
-h1.partner-container {
-    text-align: center;
-    margin-top: 60px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li div h2 {
-    margin-top: 3em !important;
-}
-
-ul li div img{
-    margin-bottom: 1em !important;
-}
-
-.partner-info {
-    text-align: block;
-    padding-right: 20px;
-}
-
-.partner-info h2 {
-    margin-block-start: 25px;
-    padding: 20px;
-}
-
-/* Partner Profile Picture */
-.img-partner {
-    border-radius: 25%;
-    max-width: 35%;
-    max-height: 35%;
-    padding: 10px 0;
-}
-
 
 /* Media Queries */
-
-/* Large or landscape phones (576px and up) */
-@media (min-width: 576px) {}
 
 /* Tablets and larger (768px and up) */
 @media (min-width: 768px) {
@@ -365,16 +386,45 @@ ul li div img{
         padding: 10px 40px;
     }
 
+    nav {
+        background-color: #77825c;
+        box-shadow: none;
+        display: block;
+        width: fit-content;
+        position: relative;
+    }
+
     nav a {
-        color: #ffffff;
+        color: #f0ead8;
+        font-size: 14px;
         text-decoration: none;
-        margin-right: 10px;
     }
 
     #logo img {
+        min-height: 160%;
+        min-width: 110%;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu > li {
+        padding-right: 1rem;
+    }
+
+    #logo img {
+        height: 150%;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+    #logo img {
         display: inline-block;
-        max-height: 150%;
-        max-width: 100%;
+        height: 150%;
+        width: 100%;
     }
 
     /* Hero */
@@ -406,10 +456,10 @@ ul li div img{
         width: 85%;
     }
 
-    /* Room Container */
+    /* Rooms Container */
     .room-container h1 {
-        margin-top: 30px;
-        padding: 10px;
+        padding-top: 20%;
+        text-align: center;
     }
 
     .room-description {
@@ -420,6 +470,12 @@ ul li div img{
     .room-description table {
         text-align: center;
         margin: 1em auto 3em;
+    }
+
+    /* Partner Section */
+    h1.partner-container {
+        padding-top: 20%;
+        text-align: center;
     }
 }
 
@@ -434,6 +490,7 @@ ul li div img{
     nav {
         margin-top: 0;
         margin-right: 20px;
+        width: fit-content;
     }
 
     nav a {
@@ -522,8 +579,7 @@ ul li div img{
         margin-top: 1em;
         margin-left: 2px;
     }
-
-    /* Partner Section */
+}
     
 
 /* Screens 1024px and up */
@@ -542,6 +598,17 @@ ul li div img{
         margin-right: 10px;
     }
 
+    /* Video Player */
+    #video-player {
+        width: 65%;
+    }
+
+    /* Partner Container */
+    h1.partner-container {
+        padding-top: 17%;
+        text-align: center;
+    }
+
     /* Partner Profile Picture */
     .img-partner {
         border-radius: 25%;
@@ -557,5 +624,10 @@ ul li div img{
     /* Hero Image */
     #hero {
         min-height: 750px;
+    }
+
+    /* Enquiry Container */
+    .form-container h1 {
+        padding-top: 10.5em;
     }
 }
