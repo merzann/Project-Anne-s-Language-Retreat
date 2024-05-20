@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif;
@@ -8,9 +10,7 @@ body {
     padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     color: #77825c;
@@ -183,8 +183,7 @@ footer ul li {
     margin-bottom: 20px;
 }
 
-.room h1,
-.room h2 {
+.room h1, .room h2 {
     text-align: center;
 }
 
@@ -195,7 +194,6 @@ footer ul li {
     height: auto;
     margin: 0 auto;
 }
-
 
 .room-description {
     text-align: center;
@@ -231,8 +229,7 @@ footer ul li {
     margin-bottom: 20px;
 }
 
-.partner-info h1,
-.partner-info h2 {
+.partner-info h1, .partner-info h2 {
     text-align: center;
 }
 
@@ -295,12 +292,24 @@ fieldset {
     width: 100%;
 }
 
-input[type="text"] {
-    width: 100%;
+input[type="text"], input[type="email"] {
+    width: calc(100%);
+    height: calc(1.5em + 5px); /* Adjust based on your specific needs */
 }
 
-input[type="email"] {
-    width: 100%;
+input[type="radio"] {
+    transform: scale(1.0);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label.radio-label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 button[type="submit"] {
@@ -364,8 +373,7 @@ button[type="submit"]:hover {
     margin-right: 10px;
 }
 
-.contact-info span,
-.contact-info a {
+.contact-info span, .contact-info a {
     display: inline-block;
     vertical-align: middle;
 }

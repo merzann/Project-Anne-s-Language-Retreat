@@ -47,7 +47,7 @@
             <fieldset aria-label="fill in the form for general inquiry">
                 <h2>General Inquiry</h2>
 
-                <p>Please fill out the form below and we will get back to shortly</p>
+                <p>Please fill out the form below and we will get back to shortly.</p>
                 <div class="text-input">
                     <label for="name-field" aria-label="Enter your name, this is a required field">Name*</label>
                     <input id="name-field" value name="name-field" placeholder="Enter Name" type="text" required />
@@ -63,41 +63,40 @@
                     <input id="phone-field" value name="phone-field" placeholder="Enter Phone Number" type="text"
                         required />
                 </div>
-                <div class="radio-group" aria-label="choose from the list below if interested in a language course">
+                <!-- Course Selection -->
+                <div aria-label="choose from the list below if interested in a language course">
                     <p>I am interested in the following language course:</p>
                     <div>
                         <input id="lang-pkg-general" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-general" aria-label="General English">General English</label>
-                    </div>
-                    <div>
-                        <input id="lang-pkg-professional" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-professional" aria-label="Professional and Business English">Professional
-                            and Business English</label>
-                    </div>
-                    <div>
-                        <input id="lang-pkg-academic" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-academic" aria-label="English Academic Language">English Academic
-                            Language</label>
-                    </div>
-                    <div>
-                        <input id="lang-pkg-exam" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-exam" aria-label="Exam Preparation for English">Exam Preparation for
+                        <label for="lang-pkg-general" class="radio-label" "aria-label=" General English">General
                             English</label>
-                    </div>
-                    <div>
+                        <br>
+                        <input id="lang-pkg-professional" name="lang-pkg-radio" type="radio" />
+                        <label for="lang-pkg-professional" class="radio-label"
+                            aria-label="Professional and Business English">Professional
+                            and Business English</label>
+                        <br>
+                        <input id="lang-pkg-academic" name="lang-pkg-radio" type="radio" />
+                        <label for="lang-pkg-academic" class="radio-label"
+                            aria-label="English Academic Language">English Academic
+                            Language</label>
+                        <br>
+                        <input id="lang-pkg-exam" name="lang-pkg-radio" type="radio" />
+                        <label for="lang-pkg-exam" class="radio-label" aria-label="Exam Preparation for English">Exam
+                            Preparation for
+                            English</label>
+                        <br>
                         <input id="lang-pkg-general-german" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-general-german" aria-label="General German">General German</label>
-                    </div>
-                    <div>
-                        <input id="lang-pkg-professional-german" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-professional-german"
-                            aria-label="Professional and Business German">Professional and Business German</label>
-                    </div>
-                    <div>
-                        <input id="lang-pkg-academic-german" name="lang-pkg-radio" type="radio" />
-                        <label for="lang-pkg-academic-german" aria-label="Academic Language German">Academic
-                            Language
+                        <label for="lang-pkg-general-german" class="radio-label" aria-label="General German">General
                             German</label>
+                        <br>
+                        <input id="lang-pkg-professional-german" name="lang-pkg-radio" type="radio" />
+                        <label for="lang-pkg-professional-german" class="radio-label"
+                            aria-label="Professional and Business German">Professional and Business German</label>
+                        <br>
+                        <input id="lang-pkg-academic-german" name="lang-pkg-radio" type="radio" />
+                        <label for="lang-pkg-professional-german" class="radio-label"
+                            aria-label="Academic Language German">Academic Language German</label>
                     </div>
                     <div>
                         <p aria-label="Enter your message, this is a required field">Message*</p>
@@ -112,6 +111,7 @@
             <span class="small">* indicates required field</span>
         </form>
     </Section>
+
     <!-- Contact information -->
     <section class="contact-container">
         <div class="contact-info">
@@ -164,7 +164,7 @@
             </p>
             <!-- iframe -->
             <div id="map">
-                <a href="https://google.com/maps/" target="_blank" rel="noopener aria-label="Link to Google Maps"><img
+                <a href="https://google.com/maps/" target="_blank" rel="noopener aria-label=" Link to Google Maps"><img
                         src="assets/images/location.jpg" alt="Map with location of the Anne's Language Retreat"></a>
             </div>
         </div>
