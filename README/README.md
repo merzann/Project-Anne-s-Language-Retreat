@@ -11,7 +11,7 @@ The structure of the page allows for easy amendments to the information displaye
 
 - About the project [About the project](## About the project)
 - Features [Features](## Features )
-  - Existing Features [xisting Featuress](### Existing Features)
+  - Existing Features [Existing Featuress](### Existing Features)
   - Features left to implement [Features left to implement](### Features Left to Implement)
 - Testing [Testing](## Testing)
   - Validator Testing [Validator Testin](### Validator Testing)
@@ -27,61 +27,82 @@ The structure of the page allows for easy amendments to the information displaye
 
 ### Existing Features
 
+- __Colour Palette__
+
+  - The color palettes used throughout the page are a soft autunm green, in shades from light bis dark, combined with a light shade of yellow for background and font. 
+  - The green reflects the national color of Ireland, the colour of life and the shamrock. 
+  - The yellow, in contrast to a clinical white, aims to give the user a feeling of home and comfort, invites them to stay and explore, and reflects the core value of the business to provide a home away from home.
+  - Both colour schemes are easy on the eyes, creating an inviting atmosphere and giving the user a feeling of warmth and cosiness.
+
+  ![Color Palette Green](../README/Media/soft_autumn_green.png)  ![Color Palette Beige](../README/Media/soft_autumn_beige.png)
+
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+  - Featured on all four pages, the full responsive navigation bar includes links to the Logo, Homepage, Room and Partners Page as well as to the Enquiry Form and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+  ![Nav Bar](../README/Media/nav_bar.png)    
 
-- __The landing page image__
+- __The landing page__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The first feature, potential guests see when landing on the page, is an image of their holiday home, a traditional Irish Cottage, with a greeting in Irish and English underneath. This equally reflects the well-known and warm welcoming hospitality people come to Ireland for as it is a great sales pitch.
+  - Combined with the image the Logo of the business above communicates clearly to potential guests what the business has to offer, a home away from home in a rural setting, perfect for a relaxing holiday, and an opportunity to practice or improve their language skills if so desired.
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+  ![Landing Page](../README/Media/landing_page.png)
 
-- __Club Ethos Section__
+- __Intro Section__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The intro section provides the user with an overview of where the Bed and Breakfast is located and what the advantage is for them to book the place.
+  - The intro section addresses both, the tourist, who visits the region specifically for exploring the Ring of Kerry, outlining the advantage of being located in the heart of the Ring of Kerry, and the language students, who is looking for a different type of language holidays off the beaten tracks, outlining the legitimacy of the language courses offered.
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+  ![Intro Section](../README/Media/intro_section.png)
 
-- __Meetup Times section__
+- __Overview__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section provides the user with more details about the surrounding area, the facilities and touristic attractions located nearby.
+  - To make the staying at the Bed and Breakfast even more appealing the paragraph not only informs the user about possible activities during their stay but also outlines that the business cooperates with mutiple providers directly, offering to assist with bookings which saves the potential guest the hassle of having to do reserach of their own.
+  - A clickable link to the list of partners websites makes it easy for the user to learn more about the activities offered and serves also as another sales pitch for encouraging the user to contact the business as people also often associate the term "partner" automatically with "discount" which is offered by the partners when staying at Anne's Language Retreat.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+  ![Overview](../README/Media/overview.png)
+
+- __Video__
+  - A short video, done by the owner of the business, at the end of the overview section whets the appetite of the user for more by showing them the beauty of the area they are going to travel to and advetising possible activities once more.
+
+  ![Video](../README/Media/video_activities_in_waterville.png)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The footer section includes links to the relevant social media sites for Anne's Language Retreat. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media.
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+  ![Footer](../README/Media/footer.png)
 
-- __Gallery__
+  - __Rooms__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - This page shows the user the list of rooms they can choose from, including facilities and prices for single or double occupancy.
+  
+  ![Rooms](../README/Media/standard-room.png)
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+- __Partner Page__
 
-- __The Sign Up Page__
+  - The partner page includes the list of partners the business cooperates with inlcuding an overview about tours or products offered and their contact details. The links will open to a new tab to allow easy navigation for the user. 
+  - This section is valuable for both, the user and the business. The user finds all informatin needed on that page and in case they only contact the partner, the partner will advertise the B&B and inform the user about the discounts offered when staying at the B&B.
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+  ![Partner](../README/Media/partner_page.png)
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
+- __Enquiry form__
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - This page will allow the user to get in contact with the business.  The user will be asked to submit their name, phone number, email address and a brief message. Additionally they have a list of clickable options for information on a language courses. This field is optional.
+  - Below the contact form the user finds the contact details of the business again as well as directions from Dublin and Cork Airport.
+  
+  ![Contact Form](../README/Media/contact_form.png)
+  ![location](../README/Media/location.png)
 
 ### Features Left to Implement
 
-- Another feature idea
+- Gallery page
+- Captcha
+- Translation of page to German, French, Spanish and Simple Chinese
 
 ## Testing 
 
@@ -99,7 +120,7 @@ If this section grows too long, you may want to split it off into a separate fil
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmerzann.github.io%2FProject-Anne-s-Language-Retreat%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmerzann.github.io%2FProject-Anne-s-Language-Retreat%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
@@ -122,6 +143,7 @@ The live link can be found here - https://merzann.github.io/Project-Anne-s-Langu
 
 - The template used for building this project was provided by Code Institute on Github for student projects [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- the color palettes used were created by color-hex [color-hex](https://www.color-hex.com/autumn-color-palettes/)
 - Ideas on the general structure of a webpage and features that can be included were taken from 
   - the Walkthrough-Project by Code Institute [Love Running Walkthrough-Project](https://merzann.github.io/love-running/)
   - the Kilkea Castle Website [Kilkea Castle Webpage](https://www.kilkeacastle.ie/)
