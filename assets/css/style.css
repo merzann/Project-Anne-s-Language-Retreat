@@ -7,7 +7,6 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    position: relative;
 }
 
 h1,
@@ -39,8 +38,7 @@ header {
 
 #logo img {
     display: inline-block;
-    max-height: 150%;
-    max-width: 100%;
+    width: 100%;
 }
 
 #menu {
@@ -93,7 +91,8 @@ nav a {
     background-image: url(../images/hero.webp);
     background-size: cover;
     box-shadow: 0 2px 2px #f0ead8;
-    min-height: 268px;
+    height: 350px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,11 +147,10 @@ nav a {
 footer {
     background-color: #77825c;
     color: #f0ead8;
-    padding: 20px;
+    padding: 20px 0;
     margin-top: 40px;
     text-align: center;
     width: 100%;
-    left: 0;
     bottom: 0;
 }
 
@@ -167,11 +165,13 @@ footer ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 footer ul li {
-    margin-right: 10px;
+    margin-right: 0;
 }
+
 
 #social-media a {
     text-decoration: none;
@@ -415,26 +415,19 @@ button[type="submit"]:hover {
 
 /* Media Queries */
 
-/* Larger Mobile phones and landscape phones (576px and up) */
-@media (min-width: 576px) {
-    #hero {
-        min-height: 380px;
-    }
-}
-
 /* Tablets and larger (768px and up) */
 @media (min-width: 768px) {
 
     /* Header */
     header {
-        padding: 10px 40px;
+        padding: 10px 20px;
     }
 
     nav {
         background-color: #77825c;
         box-shadow: none;
         display: block;
-        justify-content: baseline;
+        align-items: baseline;
         width: fit-content;
         position: relative;
     }
@@ -442,6 +435,7 @@ button[type="submit"]:hover {
     nav a {
         color: #f0ead8;
         font-size: 14px;
+        white-space: nowrap;
         text-decoration: none;
     }
 
@@ -454,10 +448,6 @@ button[type="submit"]:hover {
         flex-direction: row;
     }
 
-    #menu>li {
-        padding-right: 1rem;
-    }
-
     .nav-toggle-label {
         display: none;
     }
@@ -467,9 +457,11 @@ button[type="submit"]:hover {
         min-width: 110%;
     }
 
-    /* Hero */
+    /* Hero Image */
+
     #hero {
-        height: 470px;
+        height: 550px;
+        width: 100%;
     }
 
     /* Intro Section */
@@ -533,25 +525,9 @@ button[type="submit"]:hover {
 @media (min-width: 992px) {
 
     /* Header */
-    #logo {
-        display: block;
-        flex-direction: column;
-        order: -1;
-    }
 
     nav {
-        display: block;
-        margin-top: 0;
-        margin-right: 10px;
-        width: fit-content;
-    }
-
-    nav a {
-        white-space: nowrap;
-    }
-
-    .nav-toggle-label {
-        display: none;
+        margin-top: 10px;
     }
 
     /* Intro Section */
@@ -643,21 +619,8 @@ button[type="submit"]:hover {
         margin-right: 25px;
     }
 
-    nav {
-        margin-top: 10px;
-        width: fit-content;
-    }
-
     nav a {
-        display: flex-end;
-        font-size: l8px;
-    }
-
-    /* Hero Image */
-    #hero {
-        min-height: 650px;
-        /* pushes image down to accommodate fixed header */
-        margin-top: 8em;
+        font-size: 18px;
     }
 
     /* Video Player */
@@ -667,7 +630,7 @@ button[type="submit"]:hover {
 
     /* Footer */
     footer h2 {
-        margin-top: 0 20px;
+        margin: 20px;
     }
 
     /* Partner Container */
@@ -728,8 +691,10 @@ button[type="submit"]:hover {
 @media screen and (min-width: 1200px) {
 
     /* Hero Image */
+
     #hero {
-        min-height: 750px;
+        height: 750px;
+        width: 100%;
     }
 
     /* Partner Container */
