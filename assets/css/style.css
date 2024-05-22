@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
-body, html {
+body,
+html {
     font-family: 'Lato', sans-serif;
     background-color: #f0ead8;
     color: #38432a;
@@ -42,7 +50,7 @@ header {
 }
 
 #menu {
-    font-size: 100%;
+    font-size: 80%;
     letter-spacing: 4px;
     list-style-type: none;
     text-decoration: none;
@@ -62,6 +70,7 @@ nav {
     background-color: #a9b99f;
     box-shadow: 0 2px 2px #3a3a3a;
     position: absolute;
+    padding: 0 1.4rem;
     width: 100%;
     left: 0;
     display: none;
@@ -147,7 +156,7 @@ nav a {
 /* Footer */
 footer {
     background-color: #77825c;
-    color:#fbf7f1;
+    color: #fbf7f1;
     padding: 20px 0;
     margin-top: 40px;
     text-align: center;
@@ -353,7 +362,7 @@ button[type="submit"] i {
 
 button[type="submit"]:hover {
     background-color: darkolivegreen;
-    box-shadow: 0 4px 8px rgba(56,67,42, 0.2);
+    box-shadow: 0 4px 8px rgba(56, 67, 42, 0.2);
 }
 
 .small {
@@ -432,6 +441,7 @@ button[type="submit"]:hover {
         display: block;
         align-items: baseline;
         width: fit-content;
+        padding: 0;
         position: relative;
     }
 
@@ -439,7 +449,12 @@ button[type="submit"]:hover {
         color: #f9f4ea;
         font-size: 14px;
         white-space: nowrap;
+        padding-right: 10px;
         text-decoration: none;
+    }
+
+    nav a:last-child {
+        padding-right: 0;
     }
 
     nav a:hover {
@@ -555,6 +570,7 @@ button[type="submit"]:hover {
     #video-player {
         width: 75%;
     }
+
 
     footer {
         width: 100%;
