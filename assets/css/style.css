@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* General Styles */
-body {
+body, html {
     font-family: 'Lato', sans-serif;
     background-color: #f0ead8;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1,
@@ -50,6 +51,7 @@ header {
 
 #menu>li {
     margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .active {
@@ -95,6 +97,7 @@ nav a {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    box-sizing: border-box;
 }
 
 /* Intro Section */
@@ -146,11 +149,13 @@ footer {
     color: #f0ead8;
     padding: 20px;
     margin-top: 40px;
+    width: 100%;
     text-align: center;
 }
 
 footer h2 {
     font-family: 'Lato', sans-serif;
+    margin-top: 20px;
     color: #f0ead8;
 }
 
@@ -183,7 +188,8 @@ footer ul li {
 
 .room-container h1 {
     padding-top: 6.5em;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -222,10 +228,6 @@ footer ul li {
     padding: 80px 0 50px;
     margin-top: 100px;
     margin-right: 10px;
-}
-
-.partner-container~ul {
-    list-style-type: none;
 }
 
 .partner-container h1 {
@@ -280,6 +282,7 @@ footer ul li {
 .form-container h1 {
     padding-top: 6.5em;
     padding-bottom: 10px;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -521,6 +524,17 @@ button[type="submit"]:hover {
         text-align: center;
         margin: 1em auto 3em;
     }
+
+    /* Enquiry form */
+
+    /* Info wrapper */
+    .info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -534,7 +548,7 @@ button[type="submit"]:hover {
     }
 
     nav {
-        display: flex-end;
+        display: block;
         margin-top: 0;
         margin-right: 10px;
         width: fit-content;
@@ -576,7 +590,7 @@ button[type="submit"]:hover {
     }
 
     footer h2 {
-        margin-top: 0;
+        margin-top: 20px;
         margin-bottom: 0;
     }
 
@@ -634,7 +648,7 @@ button[type="submit"]:hover {
     }
 
     #menu {
-        margin-right: 45px;
+        margin-right: 25px;
     }
 
     nav {
@@ -650,14 +664,18 @@ button[type="submit"]:hover {
     /* Hero Image */
     #hero {
         min-height: 650px;
-        width: 110%;
         /* pushes image down to accommodate fixed header */
-        margin-top: 8.75em;
+        margin-top: 8em;
     }
 
     /* Video Player */
     #video-player {
         width: 65%;
+    }
+
+    /* Footer */
+    footer h2 {
+        margin-top: 0 20px;
     }
 
     /* Partner Container */
@@ -704,6 +722,13 @@ button[type="submit"]:hover {
         max-width: 25%;
         max-height: 25%;
         padding: 10px 0;
+    }
+
+    /* Enquiry Container */
+
+    /* pushes container down to accommodate for fixed header */
+    .partner-container {
+        margin-top: 140px !important;
     }
 }
 

@@ -125,7 +125,7 @@ The live link can be found here - https://merzann.github.io/Project-Anne-s-Langu
 - Ideas on the general structure of a webpage and features that can be included were taken from 
   - the Walkthrough-Project by Code Institute [Love Running Walkthrough-Project](https://merzann.github.io/love-running/)
   - the Kilkea Castle Website [Kilkea Castle Webpage](https://www.kilkeacastle.ie/)
-  - the Silka Lodge Website [Silka Lodge Webpage](https://sikalodgekillarney.com/)
+  - the Sika Lodge Website [Silka Lodge Webpage](https://sikalodgekillarney.com/)
 - Instructions on how to write a ReadMe were taken from the YouTube video "How to make a ReadMe.md file! Easy way!" by Akash Pambhar [YouTube Akash Pambhar](https://www.youtube.com/watch?v=mb9FJzkwmwg/)
 
 ### Media
