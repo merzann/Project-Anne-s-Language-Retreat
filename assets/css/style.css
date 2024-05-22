@@ -4,7 +4,7 @@
 body, html {
     font-family: 'Lato', sans-serif;
     background-color: #f0ead8;
-    margin: 0;
+    color: #38432a;
     padding: 0;
     overflow-x: hidden;
 }
@@ -69,7 +69,7 @@ nav {
 }
 
 nav a {
-    color: #f9fafc;
+    color: #fbf7f1;
     text-decoration: none;
 }
 
@@ -147,7 +147,7 @@ nav a {
 /* Footer */
 footer {
     background-color: #77825c;
-    color: #f0ead8;
+    color:#fbf7f1;
     padding: 20px 0;
     margin-top: 40px;
     text-align: center;
@@ -156,9 +156,11 @@ footer {
 }
 
 footer h2 {
-    font-family: 'Lato', sans-serif;
-    margin-top: 20px;
-    color: #f0ead8;
+    margin: 0;
+}
+
+footer img {
+    width: 50%;
 }
 
 footer ul {
@@ -337,7 +339,7 @@ button[type="submit"] {
     margin-top: 10px;
     padding: 10px;
     background-color: #77825c;
-    color: #f9fafc;
+    color: #fbf7f1;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
@@ -351,7 +353,7 @@ button[type="submit"] i {
 
 button[type="submit"]:hover {
     background-color: darkolivegreen;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(56,67,42, 0.2);
 }
 
 .small {
@@ -434,14 +436,14 @@ button[type="submit"]:hover {
     }
 
     nav a {
-        color: #f0ead8;
+        color: #f9f4ea;
         font-size: 14px;
         white-space: nowrap;
         text-decoration: none;
     }
 
     nav a:hover {
-        color: rgb(85, 107, 47);
+        color: #3c4218;
     }
 
     #menu {
@@ -558,11 +560,6 @@ button[type="submit"]:hover {
         width: 100%;
     }
 
-    footer h2 {
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-
     /* Room Container */
     .room-container {
         display: flex;
@@ -627,11 +624,6 @@ button[type="submit"]:hover {
     /* Video Player */
     #video-player {
         width: 65%;
-    }
-
-    /* Footer */
-    footer h2 {
-        margin: 20px;
     }
 
     /* Partner Container */
