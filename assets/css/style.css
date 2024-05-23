@@ -50,7 +50,7 @@ header {
 }
 
 #menu {
-    font-size: 80%;
+    font-size: 100%;
     letter-spacing: 4px;
     list-style-type: none;
     text-decoration: none;
@@ -65,12 +65,15 @@ header {
     border-bottom: 1px solid #f0ead8;
 }
 
+nav a:hover {
+    color: #3c4218;
+}
+
 /* navigation section */
 nav {
     background-color: #a9b99f;
     box-shadow: 0 2px 2px #3a3a3a;
     position: absolute;
-    padding: 0 1.4rem;
     width: 100%;
     left: 0;
     display: none;
@@ -169,7 +172,7 @@ footer h2 {
 }
 
 footer img {
-    width: 50%;
+    width: 80%;
 }
 
 footer ul {
@@ -295,8 +298,8 @@ footer ul li {
 }
 
 .form-container h1 {
-    padding-top: 6.5em;
-    padding-bottom: 10px;
+    padding-top: 5.5em;
+    margin-bottom: 4rem;;
     font-size: 2em;
     text-align: center;
 }
@@ -435,13 +438,13 @@ button[type="submit"]:hover {
         padding: 10px 20px;
     }
 
+    /* Nav Bar */
     nav {
         background-color: #77825c;
         box-shadow: none;
         display: block;
         align-items: baseline;
         width: fit-content;
-        padding: 0;
         position: relative;
     }
 
@@ -449,16 +452,7 @@ button[type="submit"]:hover {
         color: #f9f4ea;
         font-size: 14px;
         white-space: nowrap;
-        padding-right: 10px;
         text-decoration: none;
-    }
-
-    nav a:last-child {
-        padding-right: 0;
-    }
-
-    nav a:hover {
-        color: #3c4218;
     }
 
     #menu {
@@ -617,6 +611,11 @@ button[type="submit"]:hover {
         margin-top: 1em;
         margin-left: 2px;
     }
+
+    /* Enquiry Container */
+    .form-container h1 {
+        padding-top: 6.5em;
+    }
 }
 
 
@@ -640,6 +639,11 @@ button[type="submit"]:hover {
     /* Video Player */
     #video-player {
         width: 65%;
+    }
+
+    /* footer */
+    footer img {
+        width: 50%;
     }
 
     /* Partner Container */
@@ -692,7 +696,11 @@ button[type="submit"]:hover {
 
     /* pushes container down to accommodate for fixed header */
     .partner-container {
-        margin-top: 140px !important;
+        margin-top: 160px !important;
+    }
+
+    .form-container h1 {
+        padding-top: 7.5em;
     }
 }
 
@@ -715,8 +723,9 @@ button[type="submit"]:hover {
         margin-top: 130px;
     }
 
-    /* Enquiry Container */
+    /* Enquiry form */
     .form-container h1 {
         padding-top: 10.5em;
     }
+
 }
