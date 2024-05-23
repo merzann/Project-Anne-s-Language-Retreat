@@ -1,21 +1,23 @@
 # PROJECT-ANNE-S-LANGUAGE-RETREAT
 
 
+
 ## Table of Content
 
-- About the project [About the project](#about-the-project)
-- Features [Features](#features)
-  - Existing Features [Existing Features](#existing-features)
-  - Features left to implement [Features left to implement](#features-left-to-implement)
-- Testing [Testing](#testing)
-  - Validator Testing [Validator Testing](#validator-testing)
-  - Unfixed Bugs [Unfixed Bugs](#unfixed-bugs)
-- Deployment [Deployment](#deployment)
-- Credits [Credits](#credits)
-  - Content [Content](#content)
-  - Media [Media](#media)
-  - Special Thanks [Special Thanks](#special-thanks)
-- Other General Project Advice [Other General Project Advice](#other-general-project-advice)
+- [About the project](#about-the-project)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Features left to implement](#features-left-to-implement)
+- [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+  - [Unfixed Bugs](#unfixed-bugs)
+-  [Deployment](#deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+  - [Special Thanks](#special-thanks)
+- [Author](#author)
+- [License](#license)
 
 
 ## About this project
@@ -234,3 +236,13 @@ The live link can be found here - https://merzann.github.io/Project-Anne-s-Langu
 - Katja Ehrsam for testing the code and the page thoroughly and helping me identify bugs I had missed or not thought of
 - A big thank you again to the group of test users for reviewing the website froma a customer's perspective and providing valuable Feedback
 - Martina Williams for proof-reading the content
+
+
+## Author
+
+- [merzann](https://github.com/merzann)
+
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License%20-%20MIT-olivgreen)](LICENSE.md)
