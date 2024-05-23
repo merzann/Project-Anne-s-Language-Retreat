@@ -74,6 +74,7 @@ nav {
     background-color: #a9b99f;
     box-shadow: 0 2px 2px #3a3a3a;
     position: absolute;
+    padding: 10px 15px 0 15px;
     width: 100%;
     left: 0;
     display: none;
@@ -215,7 +216,7 @@ footer ul li {
 
 .room-container h1 {
     padding-top: 6.5em;
-    padding-bottom: 25px;
+    margin-bottom: 45px;
     font-size: 2em;
     text-align: center;
 }
@@ -340,7 +341,7 @@ fieldset {
 input[type="text"],
 input[type="email"] {
     width: calc(100%);
-    height: calc(1.5em + 5px);
+    height: calc(1.5em + 7px);
 }
 
 input[type="radio"] {
@@ -387,6 +388,7 @@ button[type="submit"]:hover {
     margin-top: 20px;
 }
 
+/* contact details */
 .contact-container {
     align-items: center;
     padding: 20px;
@@ -426,6 +428,7 @@ button[type="submit"]:hover {
     vertical-align: middle;
 }
 
+/*location and map */
 .location-container {
     display: flex;
     flex-direction: column;
@@ -459,6 +462,7 @@ button[type="submit"]:hover {
         display: block;
         align-items: baseline;
         width: fit-content;
+        padding: 10px 15px 0 15px;
         position: relative;
     }
 
@@ -512,6 +516,10 @@ button[type="submit"]:hover {
     /* Video Section */
     #video-player {
         width: 85%;
+    }
+
+    footer img {
+        width: 50%;
     }
 
     /* Rooms Container */
@@ -626,10 +634,11 @@ button[type="submit"]:hover {
         margin-left: 2px;
     }
 
-    /* Enquiry Container */
+    /* Enquiry form */
     .form-container h1 {
         padding-top: 6.5em;
     }
+
 }
 
 
