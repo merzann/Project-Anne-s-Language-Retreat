@@ -74,15 +74,17 @@ The structure of the page allows for easy amendments to the information displaye
     ![Overview](../README/Media/overview.png)
 
 - __Video__
-  - A short video, done by the owner of the business, at the end of the overview section whets the appetite of the user for more. 
+  - A short video, done by the owner of the business, at the end of the overview section whets the appetite of the user for more.
   - The video shows the user the beauty of the area they are going to travel and how easy it is to combine activities with points of interested
 
     ![Video](../README/Media/video_activities_in_waterville.png)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Anne's Language Retreat. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media and also includes the address and contact details for the business.
+  - The footer section includes links to the relevant social media sites for Anne's Language Retreat. The links will open to a new tab to allow easy navigation for the user.
+  - The footer is valuable to the user as it encourages them to keep connected via social media.
+  - The footer also includes the address and contact details for the business. 
+  - Both, the logo and the email address are clickable to provide another spot for the user to either return to the homepage or send an email to the business. The hyperlink linked to the logo will open to a new tab, the hyperlink linked to the email address connects to the email app on the user's device.
 
       ![Footer](../README/Media/footer.png)
 
@@ -96,7 +98,6 @@ The structure of the page allows for easy amendments to the information displaye
 - __Partner Page__
 
   - The partner page includes the list of partners the business cooperates with including an overview about tours or products offered and their contact details. The links will open to a new tab to allow easy navigation for the user. It is also supporting the user's experience to not have to hit the 'back' button to return to the page of the business and helps the business avoiding to loose a potential customer.
-
   - This section is valuable for both, the user and the business. The user finds all informatin needed and in case they only contact the partner, the partner will advertise the B&B and inform the user about the discounts offered when staying at the Bed and Breakfast.
 
 
@@ -138,26 +139,29 @@ The structure of the page allows for easy amendments to the information displaye
 
       - that from screen width 768px onwards the nav bar is spread out and adjusts automatically to take up the available space and the features of a solid line under the menu item and the menu items changing colours is inherited
 
-      - that the hyperlink underlaying each menu item and the logo is working as expected and connect to the correct parts of the webpage
+      - that the hyperlink linked to each each menu item and the logo is working as expected and connect to the correct parts of the webpage
 
 
     Homepage
 
-      - that the hyperlink underlaying "our partners" in the last sentence is working and connects the user to the partner page
+      - that the hyperlink linked to "our partners" in the last sentence is working and connects the user to the partner page
+      - that the hyperlink linked to the email address in the footer is working and connects to the email app on the user's device and opens up a new email window with the business email automatically filled into the 'To'-line
+      - that the hyperlink linked to the logo in the footer is working and takes the user back to the homepage
 
 
     Partner page
 
-      - that the hyperlinks underlaying the webpage address of each partner is working as expected and opens up in a new page
+      - that the hyperlink linked to the webpage address of each partner is working as expected and opens up in a new page
+      - that the hyperlink linked to the email address is working and connects to the email app on the user's device and opens up a new email window with the business email automatically filled into the 'To'-line
 
 
     Enquiry form
 
     - that the fields mandatory to fill in are working as expected so the user cannot submit an incorrect or incomplete form
-    - the radio buttons for choosing a language course are working as expected
-    - the hyperlink underlaying the email address in the contact section connects to the email app on the user's device and opens up a new email window with the business email automatically filled into the 'To'-line
-    - the hyperlink underlaying the phone connects to a communication app on the users device such as Facetime
-    - the map image is clickable and opens up to Google Maps in a new tab
+    - that the radio buttons for choosing a language course are working as expected
+    - that the hyperlink linked to the email address in the contact section is working and connects to the email app on the user's device and opens up a new email window with the business email automatically filled into the 'To'-line
+    - that the hyperlink linked the phone is working and connects to a communication app on the users device such as Facetime
+    - that the map image is clickable and opens up to Google Maps in a new tab
 
 
 ### User Testing

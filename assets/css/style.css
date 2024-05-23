@@ -175,6 +175,15 @@ footer img {
     width: 80%;
 }
 
+.contact-ft a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-ft a:hover {
+    text-decoration: underline;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
