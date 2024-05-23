@@ -313,6 +313,11 @@ footer ul li {
     text-align: center;
 }
 
+.form-container p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 form {
     width: 100%;
     max-width: 500px;
