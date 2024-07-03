@@ -336,12 +336,16 @@ fieldset {
 
 .text-area {
     width: 100%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 input[type="text"],
 input[type="email"] {
     width: calc(100%);
-    height: calc(1.5em + 7px);
+    height: calc(1.5em + 10px);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 input[type="radio"] {
